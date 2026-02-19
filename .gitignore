@@ -1,0 +1,14 @@
+# System files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
+
+# Zip archives (don't need to commit the source zips)
+*.zip
+
+# Debug
+debug_test_image.png
+header_*.txt

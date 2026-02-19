@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон красоты «Аура» — Мурино | Стрижки, маникюр, косметология</title>
+  <meta name="description"
+    content="Салон красоты Аура в Мурино, Ленинградская область. Стрижки, окрашивание, маникюр, педикюр, косметология, массаж. Запишитесь онлайн!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">✦</span>
+        <span class="logo__text">АУРА</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#team" class="nav__link">Мастера</a>
+        <a href="#gallery" class="nav__link">Галерея</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <a href="#booking" class="btn btn--header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__particles" id="particles"></div>
+    <div class="container hero__content">
+      <p class="hero__badge animate-up">Салон красоты в Мурино</p>
+      <h1 class="hero__title animate-up">Раскройте свою<br><span class="accent">естественную красоту</span></h1>
+      <p class="hero__subtitle animate-up">Премиальный уход, авторские техники и атмосфера абсолютного комфорта
+        в&nbsp;самом сердце Мурино</p>
+      <div class="hero__actions animate-up">
+        <a href="#booking" class="btn btn--primary btn--lg">Записаться онлайн</a>
+        <a href="#services" class="btn btn--outline btn--lg">Наши услуги</a>
+      </div>
+      <div class="hero__stats animate-up">
+        <div class="stat"><span class="stat__num">7+</span><span class="stat__label">лет опыта</span></div>
+        <div class="stat"><span class="stat__num">12</span><span class="stat__label">мастеров</span></div>
+        <div class="stat"><span class="stat__num">5000+</span><span class="stat__label">клиентов</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Листайте вниз</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">О нас</p>
+        <h2 class="section__title">Место, где рождается <span class="accent">красота</span></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__card glass-card">
+          <div class="about__icon">🌿</div>
+          <h3>Натуральная косметика</h3>
+          <p>Работаем исключительно с премиальными брендами и органической косметикой, безопасной для вас и природы.</p>
+        </div>
+        <div class="about__card glass-card">
+          <div class="about__icon">✨</div>
+          <h3>Индивидуальный подход</h3>
+          <p>Каждый клиент уникален. Мы подбираем программы ухода, учитывая все особенности вашей внешности.</p>
+        </div>
+        <div class="about__card glass-card">
+          <div class="about__icon">🏆</div>
+          <h3>Сертифицированные мастера</h3>
+          <p>Наши специалисты — призёры международных конкурсов с постоянным повышением квалификации.</p>
+        </div>
+        <div class="about__card glass-card">
+          <div class="about__icon">💎</div>
+          <h3>Премиум-атмосфера</h3>
+          <p>Стильный интерьер, ароматерапия и чашка кофе — насладитесь каждой минутой визита.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section section--dark" id="services">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Услуги и цены</p>
+        <h2 class="section__title">Полный спектр <span class="accent">beauty-услуг</span></h2>
+      </div>
+      <div class="services__tabs">
+        <button class="tab active" data-tab="hair">Волосы</button>
+        <button class="tab" data-tab="nails">Ногти</button>
+        <button class="tab" data-tab="face">Лицо</button>
+        <button class="tab" data-tab="body">Тело</button>
+      </div>
+      <div class="services__panels">
+        <div class="services__panel active" id="tab-hair">
+          <div class="service-item"><span class="service-name">Женская стрижка</span><span
+              class="service-dots"></span><span class="service-price">от 1 800 ₽</span></div>
+          <div class="service-item"><span class="service-name">Мужская стрижка</span><span
+              class="service-dots"></span><span class="service-price">от 1 200 ₽</span></div>
+          <div class="service-item"><span class="service-name">Окрашивание в один тон</span><span
+              class="service-dots"></span><span class="service-price">от 3 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Сложное окрашивание (AirTouch, шатуш)</span><span
+              class="service-dots"></span><span class="service-price">от 6 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Кератиновое выпрямление</span><span
+              class="service-dots"></span><span class="service-price">от 4 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Укладка / причёска</span><span
+              class="service-dots"></span><span class="service-price">от 1 500 ₽</span></div>
+        </div>
+        <div class="services__panel" id="tab-nails">
+          <div class="service-item"><span class="service-name">Маникюр классический</span><span
+              class="service-dots"></span><span class="service-price">от 1 200 ₽</span></div>
+          <div class="service-item"><span class="service-name">Маникюр + покрытие гель-лак</span><span
+              class="service-dots"></span><span class="service-price">от 2 200 ₽</span></div>
+          <div class="service-item"><span class="service-name">Педикюр классический</span><span
+              class="service-dots"></span><span class="service-price">от 2 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Педикюр + покрытие гель-лак</span><span
+              class="service-dots"></span><span class="service-price">от 3 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Наращивание ногтей</span><span
+              class="service-dots"></span><span class="service-price">от 3 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Дизайн ногтей</span><span
+              class="service-dots"></span><span class="service-price">от 100 ₽/ноготь</span></div>
+        </div>
+        <div class="services__panel" id="tab-face">
+          <div class="service-item"><span class="service-name">Чистка лица комбинированная</span><span
+              class="service-dots"></span><span class="service-price">от 3 200 ₽</span></div>
+          <div class="service-item"><span class="service-name">Пилинг (кислотный/энзимный)</span><span
+              class="service-dots"></span><span class="service-price">от 2 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Мезотерапия лица</span><span
+              class="service-dots"></span><span class="service-price">от 4 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Биоревитализация</span><span
+              class="service-dots"></span><span class="service-price">от 5 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Ламинирование бровей</span><span
+              class="service-dots"></span><span class="service-price">от 2 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Ламинирование ресниц</span><span
+              class="service-dots"></span><span class="service-price">от 2 500 ₽</span></div>
+        </div>
+        <div class="services__panel" id="tab-body">
+          <div class="service-item"><span class="service-name">Массаж классический (60 мин)</span><span
+              class="service-dots"></span><span class="service-price">от 3 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Антицеллюлитный массаж</span><span
+              class="service-dots"></span><span class="service-price">от 2 500 ₽</span></div>
+          <div class="service-item"><span class="service-name">Обёртывание</span><span class="service-dots"></span><span
+              class="service-price">от 3 000 ₽</span></div>
+          <div class="service-item"><span class="service-name">Шугаринг (зоны)</span><span
+              class="service-dots"></span><span class="service-price">от 800 ₽</span></div>
+          <div class="service-item"><span class="service-name">Восковая депиляция</span><span
+              class="service-dots"></span><span class="service-price">от 600 ₽</span></div>
+          <div class="service-item"><span class="service-name">SPA-программа «Relax»</span><span
+              class="service-dots"></span><span class="service-price">от 5 500 ₽</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Наша команда</p>
+        <h2 class="section__title">Мастера, которым <span class="accent">доверяют</span></h2>
+      </div>
+      <div class="team__grid">
+        <div class="team__card glass-card">
+          <div class="team__avatar">
+            <img src="team_anna.jpg" alt="Анна Кузнецова">
+          </div>
+          <h3>Анна Кузнецова</h3>
+          <p class="team__role">Стилист-колорист</p>
+          <p class="team__exp">Опыт: 10 лет</p>
+          <p class="team__desc">Призёр международных конкурсов. Специализация — сложные техники окрашивания.</p>
+        </div>
+        <div class="team__card glass-card">
+          <div class="team__avatar">
+            <img src="team_elena.jpg" alt="Елена Соколова">
+          </div>
+          <h3>Елена Соколова</h3>
+          <p class="team__role">Косметолог-дерматолог</p>
+          <p class="team__exp">Опыт: 8 лет</p>
+          <p class="team__desc">Врач-косметолог с медицинским образованием. Эксперт в инъекционной косметологии.</p>
+        </div>
+        <div class="team__card glass-card">
+          <div class="team__avatar">
+            <img src="team_maria.jpg" alt="Мария Петрова">
+          </div>
+          <h3>Мария Петрова</h3>
+          <p class="team__role">Мастер маникюра</p>
+          <p class="team__exp">Опыт: 6 лет</p>
+          <p class="team__desc">Создаёт настоящие произведения искусства на ногтях. Лидер по записи в салоне.</p>
+        </div>
+        <div class="team__card glass-card">
+          <div class="team__avatar">
+            <img src="team_olga.jpg" alt="Ольга Васильева">
+          </div>
+          <h3>Ольга Васильева</h3>
+          <p class="team__role">Массажист / SPA</p>
+          <p class="team__exp">Опыт: 12 лет</p>
+          <p class="team__desc">Сертифицированный специалист по лечебному и SPA-массажу. Мастер расслабления.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section section--dark" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Галерея</p>
+        <h2 class="section__title">Наши <span class="accent">работы</span></h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item"><img src="gallery_1.png" alt="Окрашивание AirTouch"></div>
+        <div class="gallery__item"><img src="gallery_2.png" alt="Авторский дизайн"></div>
+        <div class="gallery__item"><img src="gallery_3.png" alt="Вечерний макияж"></div>
+        <div class="gallery__item"><img src="gallery_4.png" alt="SPA-уход"></div>
+        <div class="gallery__item"><img src="gallery_5.png" alt="Чистка лица"></div>
+        <div class="gallery__item"><img src="gallery_6.png" alt="Креативные стрижки"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Отзывы</p>
+        <h2 class="section__title">Что говорят наши <span class="accent">клиенты</span></h2>
+      </div>
+      <div class="reviews__slider" id="reviewsSlider">
+        <div class="reviews__track" id="reviewsTrack">
+          <div class="review-card glass-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Хожу в Ауру уже 2 года. Анна — волшебница! Мои волосы наконец выглядят
+              потрясающе после окрашивания. Рекомендую всем!»</p>
+            <div class="review-card__author"><strong>Ирина М.</strong><span>постоянный клиент</span></div>
+          </div>
+          <div class="review-card glass-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Лучший маникюр в Мурино! Мария делает невероятные дизайны. Покрытие держится 3
+              недели без сколов.»</p>
+            <div class="review-card__author"><strong>Светлана К.</strong><span>постоянный клиент</span></div>
+          </div>
+          <div class="review-card glass-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Впервые попробовала биоревитализацию у Елены — результат превзошёл все
+              ожидания. Кожа сияет! Спасибо!»</p>
+            <div class="review-card__author"><strong>Алёна Д.</strong><span>клиент</span></div>
+          </div>
+          <div class="review-card glass-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Массаж у Ольги — это космос. После рабочей недели чувствую себя заново
+              рождённой. Теперь хожу каждые 2 недели.»</p>
+            <div class="review-card__author"><strong>Наталья В.</strong><span>постоянный клиент</span></div>
+          </div>
+        </div>
+        <div class="reviews__controls">
+          <button class="reviews__btn" id="prevReview" aria-label="Предыдущий">‹</button>
+          <button class="reviews__btn" id="nextReview" aria-label="Следующий">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo section section--dark">
+    <div class="container">
+      <div class="promo__inner glass-card">
+        <div class="promo__content">
+          <p class="section__tag">Специальное предложение</p>
+          <h2 class="promo__title">Скидка 20% на первое посещение</h2>
+          <p class="promo__text">Запишитесь прямо сейчас и получите скидку на любую услугу при первом визите. Акция
+            действует до конца месяца!</p>
+          <a href="#booking" class="btn btn--primary btn--lg">Получить скидку</a>
+        </div>
+        <div class="promo__decor">
+          <div class="promo__circle"></div>
+          <div class="promo__circle promo__circle--2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking section" id="booking">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Запись онлайн</p>
+        <h2 class="section__title">Запишитесь <span class="accent">прямо сейчас</span></h2>
+      </div>
+      <form class="booking__form glass-card" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Стрижка</option>
+              <option>Окрашивание</option>
+              <option>Маникюр</option>
+              <option>Педикюр</option>
+              <option>Косметология</option>
+              <option>Массаж / SPA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Желаемая дата</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Комментарий</label>
+          <textarea id="message" name="message" rows="3" placeholder="Дополнительные пожелания..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить заявку</button>
+        <p class="booking__note">Мы перезвоним вам в течение 15 минут для подтверждения записи</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts section section--dark" id="contacts">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">Контакты</p>
+        <h2 class="section__title">Как нас <span class="accent">найти</span></h2>
+      </div>
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <div class="contact-item glass-card">
+            <div class="contact-item__icon">📍</div>
+            <div>
+              <h4>Адрес</h4>
+              <p>г. Мурино, бул. Менделеева, д. 9, корп. 1<br>ТЦ «Мурино Молл», 2 этаж</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <h4>Телефон</h4>
+              <p><a href="tel:+78121234567">+7 (812) 123-45-67</a></p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-item__icon">🕐</div>
+            <div>
+              <h4>Режим работы</h4>
+              <p>Пн-Пт: 9:00 — 21:00<br>Сб-Вс: 10:00 — 20:00</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-item__icon">💬</div>
+            <div>
+              <h4>Мессенджеры</h4>
+              <p>WhatsApp · Telegram · Instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map glass-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7996.548484!2d30.44!3d60.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDAzJzAwLjAiTiAzMMKwMjYnMjQuMCJF!5e0!3m2!1sru!2sru!4v1"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">✦</span>
+        <span class="logo__text">АУРА</span>
+      </a>
+      <p class="footer__copy">© 2026 Салон красоты «Аура». Все права защищены.</p>
+      <div class="footer__socials">
+        <a href="#" class="social-link" aria-label="VK">VK</a>
+        <a href="#" class="social-link" aria-label="Telegram">TG</a>
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast__icon">✓</span>
+    <span class="toast__msg">Заявка отправлена! Мы скоро перезвоним.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
