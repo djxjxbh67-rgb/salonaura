@@ -772,6 +772,9 @@ ul {
   color: var(--clr-text);
   margin-bottom: 20px;
   font-style: italic;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .review-card__author {
@@ -1112,6 +1115,7 @@ ul {
 
   .review-card {
     min-width: 100%;
+    padding: 24px;
   }
 
   .form-row {
@@ -1126,6 +1130,10 @@ ul {
 
   .promo__inner {
     padding: 40px 24px;
+  }
+
+  .hero__scroll {
+    display: none;
   }
 }
 
