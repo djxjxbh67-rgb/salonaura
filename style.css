@@ -772,9 +772,6 @@ ul {
   color: var(--clr-text);
   margin-bottom: 20px;
   font-style: italic;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 .review-card__author {
@@ -1119,6 +1116,15 @@ ul {
     max-width: calc(100vw - 48px);
     padding: 24px;
     box-sizing: border-box;
+    text-align: center;
+  }
+
+  .review-card__text {
+    white-space: normal;
+  }
+
+  .review-card__author {
+    align-items: center;
   }
 
   .form-row {
