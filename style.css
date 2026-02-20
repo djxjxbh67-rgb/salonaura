@@ -1115,7 +1115,10 @@ ul {
 
   .review-card {
     min-width: 100%;
+    width: 100%;
+    max-width: calc(100vw - 48px);
     padding: 24px;
+    box-sizing: border-box;
   }
 
   .form-row {
