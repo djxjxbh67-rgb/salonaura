@@ -1140,6 +1140,8 @@ ul {
 
   .hero__stats {
     flex-wrap: wrap;
+    gap: 15px;
+    /* Tighter gap */
   }
 
   .booking__form {
@@ -1150,6 +1152,8 @@ ul {
     font-size: 2.2rem;
     line-height: 1.25;
     word-break: break-word;
+    hyphens: auto;
+    /* Allow CSS hyphenation */
   }
 
   .section__title {
@@ -1159,5 +1163,40 @@ ul {
 
   p {
     line-height: 1.5;
+  }
+}
+
+/* Aggressive fix for very small phones / narrow screens */
+@media (max-width: 400px) {
+  .hero__content {
+    padding: 100px 0 60px;
+    /* Reduce top padding on small screens */
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+    /* Force much smaller font */
+  }
+
+  .hero__subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .section__title {
+    font-size: 1.6rem;
+  }
+
+  .stat__num {
+    font-size: 2rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
   }
 }
