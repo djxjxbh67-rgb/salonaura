@@ -1164,6 +1164,29 @@ ul {
   p {
     line-height: 1.5;
   }
+
+  /* Fix for overflowing service prices */
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .service-name {
+    white-space: normal;
+    line-height: 1.4;
+    font-size: 1.05rem;
+  }
+
+  .service-dots {
+    display: none;
+  }
+
+  .service-price {
+    align-self: flex-start;
+    font-size: 1.15rem;
+  }
 }
 
 /* Aggressive fix for very small phones / narrow screens */
